@@ -15,11 +15,13 @@
     &-logos {
         display: flex;
         align-items: center;
-        gap: 0 75px;
+        gap: 50px 75px;
         max-width: 1370px;
         padding: 0 15px;
         margin-left: auto;
         margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &-logo img {

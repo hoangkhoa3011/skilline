@@ -1,0 +1,100 @@
+@use 'var';
+@use 'mixin';
+
+.footer {
+    background-color: var.$gray-darker;
+
+    &-container {
+        padding: 74px 15px 40px;
+        margin-inline: auto;
+        max-width: 630px;
+        display: flex;
+        flex-direction: column;
+        gap: 95px 0;
+        font-family: var.$font-primary;
+        letter-spacing: 0.04em;
+        text-align: center;
+    }
+
+    &-logo {
+        max-height: 83px;
+    }
+
+    &-subscribe {
+        margin-inline: auto;
+
+        &-title {
+            font-weight: 500;
+            font-size: 26px;
+            line-height: calc(39 / 26);
+            text-align: center;
+            color: #B2B3CF;
+            margin-bottom: 20px;
+        }
+
+        &-form {
+            display: flex;
+            gap: 20px;
+
+            @include mixin.maxWidth(630px) {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        &-input {
+            width: 400px;
+            height: 60px;
+            border: 1px solid #83839A;
+            border-radius: 80px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 58px;
+            background: var.$gray-darker;
+            padding-left: 30px;
+            color: #83839A;
+
+            &:focus {
+                color: #83839A;
+            }
+
+            @include mixin.maxWidth(630px) {
+                width: 100%;
+            }
+        }
+
+        &-btn {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 33px;
+            background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
+            padding-inline: 34px;
+            color: #FFFFFF;
+        }
+    }
+
+    &-bottom {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: calc(33 / 22);
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #B2B3CF;
+    }
+
+    &-policies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &-space {
+        display: block;
+        height: 17px;
+        width: 2px;
+        background: #626381;
+        margin-inline: 20px;
+    }
+}

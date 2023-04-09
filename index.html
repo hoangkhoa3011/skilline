@@ -11,29 +11,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- sass ./sass/app.scss ./css/app.css --watch -->
         <header class="header">
             <div class="header-container">
                 <div class="header-top">
                     <img srcset="./assets/img/logo.png 2x" alt="" class="header-logo" />
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#!" class="menu-link">Home</a></li>
-                        <li class="menu-item">
-                            <a href="#!" class="menu-link">Careers</a>
-                        </li>
-                        <li class="menu-item"><a href="#!" class="menu-link">Blog</a></li>
-                        <li class="menu-item">
-                            <a href="#!" class="menu-link">About Us</a>
-                        </li>
-                    </ul>
-                    <div class="header-buttons">
-                        <a href="#!" class="btn btn--white">Login</a>
-                        <a href="#!" class="btn btn--primary">Sign Up</a>
+                    <div class="menu-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="navbar">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#!" class="menu-link">Home</a></li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Careers</a>
+                            </li>
+                            <li class="menu-item"><a href="#!" class="menu-link">Blog</a></li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">About Us</a>
+                            </li>
+                        </ul>
+                        <div class="header-buttons">
+                            <a href="#!" class="btn btn--white">Login</a>
+                            <a href="#!" class="btn btn--primary">Sign Up</a>
+                        </div>
                     </div>
                 </div>
                 <div class="header-main">
@@ -122,7 +129,7 @@
                     </div>
                     <div class="introduce-item">
                         <div class="introduce-icon bg-blue">
-                            <img src="./assets/img/icon-users.svg" alt="" class="" />
+                            <img src="./assets/img/icon-user.svg" alt="" class="" />
                         </div>
                         <h3 class="introduce-title">Customer Tracking</h3>
                         <p class="introduce-desc">
@@ -208,7 +215,7 @@
                                 </li>
                                 <li class="feature-item">
                                     <div class="feature-icon">
-                                        <img src="./assets/img/icon-squares.svg" alt="" />
+                                        <img src="./assets/img/icon-layout.svg" alt="" />
                                     </div>
                                     <p class="feature-text">
                                         Teachers don’t get lost in the grid view and have a
@@ -217,7 +224,7 @@
                                 </li>
                                 <li class="feature-item">
                                     <div class="feature-icon">
-                                        <img src="./assets/img/icon-squares.svg" alt="" />
+                                        <img src="./assets/img/icon-users.svg" alt="" />
                                     </div>
                                     <p class="feature-text">
                                         Teachers don’t get lost in the grid view and have a
@@ -330,12 +337,119 @@
                         </div>
                     </a>
                 </div>
-                <div class="testimonal-slider">
-                    <div class="testimonial-item"></div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-img">
+                        <img src="./assets/img/imggirl.png" alt="">
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-item-content">"Thank you so much for your help. It's exactly what I've
+                            been looking for. You won't regret it. It really saves me time and effort. Skilline is
+                            exactly what our business has been lacking."</div>
+                        <div class="testimonial-item-bottom">
+                            <p class="testimonial-item-name">Gloria Rose</p>
+                            <div class="testimonial-item-voted">
+                                <div class="testimonial-item-stars">
+                                    <img src="./assets/img/icon-star.svg" alt="">
+                                    <img src="./assets/img/icon-star.svg" alt="">
+                                    <img src="./assets/img/icon-star.svg" alt="">
+                                    <img src="./assets/img/icon-star.svg" alt="">
+                                    <img src="./assets/img/icon-star.svg" alt="">
+                                </div>
+                                <p class="testimonial-item-reviews">12 reviews at Yelp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="news-header">
+                    <h3 class="global-heading ">
+                        Lastest News and Resources
+                    </h3>
+                    <p class="global-text">
+                        See the developments that have occurred to Skillines in the world
+                    </p>
+                </div>
+                <div class="news-content">
+                    <div class="news-hotnews">
+                        <div class="news-hotnews-img">
+                            <img src="./assets/img/news-hot.svg" alt="">
+                        </div>
+                        <div class="news-hotnews-tag">NEWS</div>
+                        <h3 class="news-hotnews-title">Class adds $30 million to its balance sheet for a Zoom-friendly
+                            edtech solution</h3>
+                        <p class="news-hotnews-text">Class, launched less than a year ago by Blackboard co-founder
+                            Michael Chasen, integrates exclusively...</p>
+                        <a href="#!" class="news-hotnews-text news-hotnews-read">Read more</a>
+                    </div>
+                    <div class="news-list">
+                        <div class="news-item">
+                            <div class="news-item-img">
+                                <img src="./assets/img/news-1.svg" alt="">
+                                <div class="news-item-tag">PRESS RELEASE</div>
+                            </div>
+                            <div class="news-item-content">
+                                <h3 class="news-item-title">Class Technologies Inc. Closes $30 Million Series A
+                                    Financing to Meet High Demand</h3>
+                                <p class="news-item-text">Class Technologies Inc., the company that created Class,...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-item-img">
+                                <img src="./assets/img/news-2.svg" alt="">
+                                <div class="news-item-tag">NEWS</div>
+                            </div>
+                            <div class="news-item-content">
+                                <h3 class="news-item-title">Zoom’s earliest investors are betting millions on a better
+                                    Zoom for schools</h3>
+                                <p class="news-item-text">Zoom was never created to be a consumer product. Nonetheless,
+                                    the...</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-item-img">
+                                <img src="./assets/img/news-3.svg" alt="">
+                                <div class="news-item-tag">NEWS</div>
+                            </div>
+                            <div class="news-item-content">
+                                <h3 class="news-item-title">Former Blackboard CEO Raises $16M to Bring LMS Features to
+                                    Zoom Classrooms</h3>
+                                <p class="news-item-text">This year, investors have reaped big financial returns from
+                                    betting on Zoom...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <img srcset="./assets/img/footer-logo.svg 2x" alt="" class="footer-logo" />
+                <div class="footer-content">
+                    <form action="" class="footer-subscribe">
+                        <h3 class="footer-subscribe-title">Subscribe to get our Newsletter</h3>
+                        <div class="footer-subscribe-form">
+                            <input placeholder="Your Email" type="text" class="footer-subscribe-input">
+                            <button class="btn footer-subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-policies">
+                        <p>Careers</p>
+                        <span class="footer-space"></span>
+                        <p>Privacy Policy</p>
+                        <span class="footer-space"></span>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <p>© 2021 Class Technologies Inc.</p>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

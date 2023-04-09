@@ -1,22 +1,31 @@
 @use 'var';
+@use 'mixin';
 
 .introduce {
-    margin-bottom: 160px;
+    margin-bottom: 110px;
 
     &-header {
         max-width: 870px;
         padding: 0 15px;
-        margin: 0 auto 103px;
+        margin: 0 auto 53px;
         text-align: center;
     }
 
     &-list {
         max-width: 1500px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 50px 15px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 60px;
+
+        @include mixin.maxWidth(1500px) {
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
     }
 
     &-item {
@@ -29,6 +38,7 @@
         justify-items: center;
         align-items: center;
         text-align: center;
+        width: 450px;
     }
 
     &-icon {
