@@ -893,7 +893,7 @@ body {
   max-width: 280px;
 }
 .news-item-img img {
-  max-width: 100%;
+  max-width: 280px;
 }
 .news-item-tag {
   position: absolute;
